@@ -1,0 +1,10 @@
+HU-05 
+Priorización (MEDIA)
+Como usuario 
+Quiero que la información de mi estacionamiento se actualice automáticamente
+Para no tener que refrescar la app 
+Gherkin 
+Scenario: Actualización automática de datos
+  Given el usuario tiene un vehículo estacionado
+  When pasan 60 segundos
+  Then el sistema debe actualizar el cronómetro y el monto acumulado en la pantalla

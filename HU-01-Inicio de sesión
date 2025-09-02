@@ -1,0 +1,17 @@
+HU-01
+Priorización (ALTA)
+Como usuario registrado en la app 
+Quiero iniciar sesión en la app 
+Para acceder a las funciones de gestión de estacionamiento 
+Gherkin
+scenario: Inicio de sesión exitoso
+  Given el usuario está en la pantalla de inicio de sesión
+  And el usuario ingresa credenciales válidas
+  When presiona el botón "Iniciar sesión"
+  Then el sistema debe redirigirlo al panel principal
+
+Scenario: Inicio de sesión fallido
+  Given el usuario está en la pantalla de inicio de sesión
+  And el usuario ingresa credenciales inválidas
+  When presiona el botón "Iniciar sesión"
+  Then el sistema debe mostrar un mensaje de error

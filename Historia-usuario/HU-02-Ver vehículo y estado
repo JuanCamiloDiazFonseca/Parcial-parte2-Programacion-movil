@@ -1,0 +1,17 @@
+HU-02
+Priorización (ALTA)
+Como usuario 
+Quiero ver el estado de mi vehículo (estacionado o no)
+Para tener control de mi uso en el parqueadero 
+Gherkin
+Scenario: Vehículo estacionado
+  Given el usuario tiene un vehículo registrado en el sistema
+  And el vehículo está estacionado
+  When el usuario consulta el estado
+  Then el sistema debe mostrar "Estacionado"
+
+Scenario: Vehículo no estacionado
+  Given el usuario tiene un vehículo registrado en el sistema
+  And el vehículo no está estacionado
+  When el usuario consulta el estado
+  Then el sistema debe mostrar "No estacionado"

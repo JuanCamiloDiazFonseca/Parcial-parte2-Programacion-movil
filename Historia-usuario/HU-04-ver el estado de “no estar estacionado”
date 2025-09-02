@@ -1,0 +1,11 @@
+HU-04 
+Priorización (MEDIA)
+Como usuario 
+Quiero ver el estado de “no estar estacionado” sin saldo pendiente 
+Para confirmar que no tengo pagos pendientes
+Gherkin 
+Scenario: Usuario sin deuda
+  Given el vehículo no está estacionado
+  And no existe deuda pendiente
+  When el usuario consulta el estado
+  Then el sistema debe mostrar "No estacionado" y "Sin deuda"

@@ -1,0 +1,10 @@
+HU-06
+Priorización (BAJA)
+Como usuario
+Quiero consultar el detalle de la tarifa aplicada 
+Para entender como se calcula el montón a pagar
+ Gherkin
+Scenario: Consulta de tarifa
+  Given el usuario está en la sección de tarifas
+  When selecciona un tipo de vehículo o tiempo
+  Then el sistema debe mostrar la tarifa correspondiente y las reglas de cálculo

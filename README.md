@@ -1,0 +1,1 @@
+Crear un prototipo de una aplicación móvil el cual este enfocada en la gestión de estacionamientos. La temática principal es mostrar en tiempo real el estado del vehículo y la deuda estimada así para reforzar competencias y análisis, documentación y prototipado.

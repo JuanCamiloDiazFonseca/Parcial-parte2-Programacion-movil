@@ -1,0 +1,10 @@
+HU-03
+Prioridad (ALTA)
+Como usuario
+Quiero visualizar el cronometro, la tarifa y el montón acumulado
+Para conocer cuando debo pagar en tiempo real 
+Gherkin
+Scenario: Visualización del cronómetro
+  Given el vehículo está estacionado
+  When el usuario abre el detalle del estacionamiento
+  Then el sistema debe mostrar el tiempo transcurrido, la tarifa vigente y el monto acumulado
